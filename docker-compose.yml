@@ -1,0 +1,18 @@
+version: '1'
+
+services:
+  hello-world:
+    image: thomaspoignant/hello-world-rest-json
+    ports:
+      - "8080:8080"
+    container_name: hello-world
+
+  test:
+    image: tests
+    command: ["./wait-for-it.sh", "hello-world:8080", "--", "npm", "run", "test"]
+    depends_on:
+      - hello-world
+    container_name: api_tests
+    environment:
+      - API_URL=http://hello-world:8080/
+
