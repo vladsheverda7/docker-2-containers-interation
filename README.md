@@ -13,3 +13,7 @@
 ## run two containers
 
 1. docker-compose up
+
+## run all
+
+1. open terminal and run .\run.bat
