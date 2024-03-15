@@ -15,4 +15,3 @@ services:
     container_name: api_tests
     environment:
       - API_URL=http://hello-world:8080/
-
