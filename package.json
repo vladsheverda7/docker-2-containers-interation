@@ -1,0 +1,25 @@
+{
+  "name": "docker",
+  "version": "1.0.0",
+  "license": "ISC",
+  "description": "SDET Mastery Docker",
+  "author": "Vladislav Sheverda",
+  "keywords": [
+    "docker",
+    "jest"
+  ],
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vladsheverda7/docker-2-containers-interation"
+  },
+  "scripts": {
+    "test": "npx mocha test.spec.js"
+  },
+  "type": "module",
+  "devDependencies": {
+    "axios": "^1.6.7",
+    "chai": "^5.1.0",
+    "mocha": "^10.3.0"
+  }
+}
